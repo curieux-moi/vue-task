@@ -18,6 +18,7 @@
       </div>
 
       <button class="btn" type="submit">Create card</button>
+      <router-link to='/' class="btn cancel">Cancel</router-link>
     </form>
     </div>
   </div>
@@ -43,3 +44,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.cancel {
+  margin-left: 20px;
+}
+</style>
