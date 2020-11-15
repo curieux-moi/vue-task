@@ -6,12 +6,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    cards: [...defaultCards, ...JSON.parse(localStorage.getItem('cards') || '[]')],
+    cards: JSON.parse(localStorage.getItem('cards')) || defaultCards,
     dragAndDropActive: JSON.parse(localStorage.getItem('dragAndDropActive')) || true
   },
   mutations: {
     updateList (state) {
-      localStorage.setItem('cards', JSON.stringify(state.cards))
+      localStorage.setItem('cards', JSON.stringify([...state.cards]))
     },
     createCard (state, card) {
       state.cards = [...state.cards, {...card, position: state.cards.length + 1}]

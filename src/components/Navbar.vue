@@ -7,18 +7,18 @@
         <ul class="right hide-on-med-and-down">
           <router-link
             tag="li"
-            to="/"
+            to="/create"
             exact
             active-class="active"
           >
-            <a href="#">Create</a>
+            <a>Create</a>
           </router-link>
           <router-link
               tag="li"
-              to="/list"
+              to="/"
               active-class="active"
           >
-            <a href="#">List</a>
+            <a>List</a>
           </router-link>
         </ul>
       </div>

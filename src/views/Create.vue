@@ -38,7 +38,7 @@ export default {
         description: this.description
       })
 
-      this.$router.push('/list')
+      this.$router.push('/')
     }
   }
 }
